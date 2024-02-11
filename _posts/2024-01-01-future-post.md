@@ -3,9 +3,8 @@ title: 'Brainomaly'
 date: 2024-01-01
 #permalink: /posts/2024/01/blog-post-1/
 tags:
-  - cool posts
-  - category1
-  - category2
+  - Outlier detection
+  - GAN
 ---
 
 
@@ -464,6 +463,10 @@ As I draw my conclusions, I see this contemplation as a small step toward a futu
 
 
 ## References
+
+[Charu C. Aggarwal]. (*Outlier Analysis,Second Edition
+ *). Springer International Publishing AG ,2017
+
 [Computer vision and machine learning for medical image analysis: recent advances, challenges, and way
     forward, 2022](https://f.oaecdn.com/xmlpdf/2a947cb1-166c-4615-9509-319e78bd8e24/4684.pdf)
 
