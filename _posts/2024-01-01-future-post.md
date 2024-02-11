@@ -478,7 +478,7 @@ As I draw my conclusions, I see this contemplation as a small step toward a futu
 
 [Anomaly Detection Wikipedia](https://en.wikipedia.org/wiki/Anomaly_detection)
 
-[From GAN to WGAN , 2017](https://lilianweng.github.io/posts/2017-08-20-gan/)
+
 [Deep Learning for Anomaly Detection, 2020](https://ff12.fastforwardlabs.com/#:~:text=“An%20outlier%20is%20an%20observation,generated%20by%20a%20different%20mechanism.”&text=Anomalies%2C%20often%20referred%20to%20as,a%20notion%20of%20normal%20behavior)
 
 [From GAN to WGAN , 2017](https://lilianweng.github.io/posts/2017-08-20-gan/)
