@@ -463,16 +463,20 @@ As I draw my conclusions, I see this contemplation as a small step toward a futu
 
 
 ## References
-
+[Computer vision and machine learning for medical im-
+    age analysis: recent advances, challenges, and way
+    forward, 2022](https://f.oaecdn.com/xmlpdf/2a947cb1-166c-4615-9509-319e78bd8e24/4684.pdf)
+    
 @online{example_website,
-    author = {Author(s) if available},
-    title = {Title of the webpage},
-    year = {Year of publication or last update},
-    url = {URL of the webpage},
-    note = {Accessed: Date of access}
+    author = {Mehmet Mahir Özmen},
+    title = {Computer vision and machine learning for medical im-
+    age analysis: recent advances, challenges, and way
+    forward},
+    year = {2022},
+    url = {https://f.oaecdn.com/xmlpdf/2a947cb1-166c-4615-9509-319e78bd8e24/4684.pdf}
 }
 
-https://f.oaecdn.com/xmlpdf/2a947cb1-166c-4615-9509-319e78bd8e24/4684.pdf
+
 
 https://factspan.medium.com/machine-learning-deep-learning-techniques-for-anomaly-detection-in-medical-imaging-f27fbd33575b
 
