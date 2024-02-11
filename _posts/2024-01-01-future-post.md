@@ -1,7 +1,7 @@
 ---
 title: 'Brainomaly'
 date: 2024-01-01
-#permalink: /posts/2012/08/blog-post-4/
+#permalink: /posts/2024/01/blog-post-1/
 tags:
   - cool posts
   - category1
@@ -455,9 +455,8 @@ As I draw my conclusions, I see this contemplation as a small step toward a futu
 
 
 
-.
 
-## Further Reading
+
 
 
 
@@ -466,7 +465,7 @@ As I draw my conclusions, I see this contemplation as a small step toward a futu
 [Computer vision and machine learning for medical im-
     age analysis: recent advances, challenges, and way
     forward, 2022](https://f.oaecdn.com/xmlpdf/2a947cb1-166c-4615-9509-319e78bd8e24/4684.pdf)
-    
+
 @online{example_website,
     author = {Mehmet Mahir Özmen},
     title = {Computer vision and machine learning for medical im-
