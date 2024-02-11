@@ -425,7 +425,7 @@ The AUC metrics used for evaluation, both in Alzheimer's disease and headache de
 
 ## Future Horizons
 
-As we scrutinize the results, it's evident that Brainomaly is not just a solution for today's challenges but a promising avenue for future exploration. Its robust performance in diverse scenarios positions it as a frontrunner in the realm of unsupervised neurologic disease detection.
+As we examine the results, it's evident that Brainomaly is not just a solution for today's challenges but a promising avenue for future exploration. Its robust performance in diverse scenarios positions it as a frontrunner in the area of unsupervised neurologic disease detection.
 
 *In conclusion, the results affirm Brainomaly's potential to redefine medical imaging boundaries, offering a glimpse into a future where unsupervised methods play a pivotal role in disease detection.*
 
