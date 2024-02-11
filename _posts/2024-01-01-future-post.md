@@ -476,7 +476,7 @@ As I draw my conclusions, I see this contemplation as a small step toward a futu
 [A Comprehensive Introduction to Anomaly Detection, 2023](https://www.datacamp.com/tutorial/introduction-to-anomaly-detection?utm_source=google&utm_medium=paid_search&utm_campaignid=19589720818&utm_adgroupid=157156374431&utm_device=c&utm_keyword=&utm_matchtype=&utm_network=g&utm_adpostion=&utm_creative=683184494297&utm_targetid=aud-1704732079567:dsa-2218886984580&utm_loc_interest_ms=&utm_loc_physical_ms=1004054&utm_content=&utm_campaign=230119_1-sea~dsa~tofu_2-b2c_3-eu_4-prc_5-na_6-na_7-le_8-pdsh-go_9-na_10-na_11-na-dec23&gad_source=1&gclid=CjwKCAiA-P-rBhBEEiwAQEXhHyGAqhlucvUVm1j6DNQAlt9EaEDTwCynVaRDbAUM_Yr6ciWcO0EZjxoCzfcQAvD_BwE
 )
 
-[Anomaly Deetection Wikipedia](https://en.wikipedia.org/wiki/Anomaly_detection)
+[Anomaly Detection Wikipedia](https://en.wikipedia.org/wiki/Anomaly_detection)
 
 [From GAN to WGAN , 2017](https://lilianweng.github.io/posts/2017-08-20-gan/)
 [Deep Learning for Anomaly Detection, 2020](https://ff12.fastforwardlabs.com/#:~:text=“An%20outlier%20is%20an%20observation,generated%20by%20a%20different%20mechanism.”&text=Anomalies%2C%20often%20referred%20to%20as,a%20notion%20of%20normal%20behavior)
