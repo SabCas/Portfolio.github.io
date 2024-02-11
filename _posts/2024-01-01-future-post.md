@@ -77,9 +77,9 @@ Effectively navigating the intricacies of medical data necessitates a combinatio
 
 - **Statistical Methods**: Using fundamental statistical metrics to identify deviations in patient metrics or imaging data from established standards.
   
-- **Machine Learning Models**: Harnessing algorithms like One-Class SVM and Autoencoders to analyze extensive datasets and flag potential anomalies in patient information or diagnostic images.
+- **Machine Learning Models**: Harnessing algorithms like One-Class SVM and Isolation Forest to analyze extensive datasets and flag potential anomalies in patient information or diagnostic images.
   
-- **Deep Learning Techniques**: Employing deep neural networks, particularly convolutional neural networks (CNNs), to scrutinize detailed patterns in medical images and highlight subtle irregularities.
+- **Deep Learning Techniques**: Employing deep neural networks, particularly convolutional neural networks (CNNs), Autoencoders or GANs to scrutinize detailed patterns in medical images and highlight subtle irregularities.
   
 - **Time-Series Analysis**: Applying temporal data analysis techniques to monitor patient vitals and metrics over time and detect deviations from anticipated patterns.
   
