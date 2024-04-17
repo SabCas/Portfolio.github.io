@@ -4,4 +4,7 @@ title: "Portfolio item number 1"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+Explore my portfolio highlighting projects centered on medical imaging challenges like the Grand Challenge HaN-Seg. Using advanced tools such as the MONAI Framework, my work revolves around automating the precise delineation of Organs-at-risk (OARs) within the Head and Neck (HaN) region from CT and MR images. These efforts are geared towards enhancing accuracy and scalability in medical image analysis for impactful healthcare applications.
+
+<embed src="/assets/Foundation_Models.pdf" type="application/pdf" width="100%" height="600px" />
+
