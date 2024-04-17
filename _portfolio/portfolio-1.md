@@ -8,7 +8,7 @@ collection: portfolio
 [The code of this project can be found at](https://github.com/SabCas/FoundationModel/blob/main/mtctvalidationtest.py)
 
 
-<embed src="/assets/Foundation_Models.pdf" type="application/pdf" width="100%" height="600px" />
+<object data="/assets/Foundation_Models.pdf" type="application/pdf" width="100%" height="600px" />
     <p>PDF cannot be displayed. <a href="/assets/Foundation_Models.pdf">Download</a> it instead.</p>
 </object>
 
