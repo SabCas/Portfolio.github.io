@@ -9,6 +9,6 @@ collection: portfolio
 
 
 <embed src="/assets/Foundation_Models.pdf" type="application/pdf" width="100%" height="600px" />
-<p>PDF cannot be displayed. <a href="/assets/Foundation_Models.pdf">Download</a> it instead.</p>
+    <p>PDF cannot be displayed. <a href="/assets/Foundation_Models.pdf">Download</a> it instead.</p>
 </object>
 
