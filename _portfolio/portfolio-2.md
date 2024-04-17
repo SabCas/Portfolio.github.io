@@ -8,5 +8,8 @@ collection: portfolio
 [The code of this project can be found at](https://github.com/SabCas/FoundationModel/blob/main/CreditCardFraudDetection.ipynb)
 
 
-<embed src="/assets/Fraud.pdf" type="application/pdf" width="100%" height="600px" />
+<object data="/assets/Fraud.pdf" type="application/pdf" width="100%" height="600px">
+  <p>PDF cannot be displayed. <a href="/assets/Fraud.pdf">Download</a> it instead.</p>
+</object>
+
 
