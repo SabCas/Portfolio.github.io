@@ -1,13 +1,13 @@
 ---
 permalink: /
-title: "Welcome"
+title: "Welcome to my blog!"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-# ,to my blog!
+
  I’m Sabrina Caspary, a Master's student in Artificial Intelligence and Data Science at Stuttgart.
 
 I’m deeply passionate about AI because of its transformative impact across various fields. Through my blog, I aim to share my projects and insights, offering a glimpse into the world of AI and data science.
