@@ -1,19 +1,19 @@
-**Title: Implementing a deep Q-learning algorithm based on the paper "Human-level control through deep reinforcement learning" by David Silver et al.**
+# Title: Implementing a deep Q-learning algorithm based on the paper "Human-level control through deep reinforcement learning" by David Silver et al.
 
-The paper: [Human-level control through deep reinforcement learning](https://daiwk.github.io/assets/dqn.pdf)
+**The paper: [Human-level control through deep reinforcement learning](https://daiwk.github.io/assets/dqn.pdf)**
 
 Before we implement the DQN Network for the Atari game let's have look at the paper.
 The quest for artificial intelligence (AI) capable of human-level performance has long captivated researchers. One significant milestone in this journey was the groundbreaking paper "Human-level control through deep reinforcement learning" by David Silver and his colleagues, which was published in 2015. This seminal work introduced a novel approach to reinforcement learning (RL) that enabled AI to achieve unprecedented levels of performance in complex environments, particularly in the realm of video games.
 
-### The Challenge: Bridging the Gap Between AI and Human Performance
+## The Challenge: Bridging the Gap Between AI and Human Performance
 
 Before Silver's work, AI systems struggled to perform at a level comparable to humans in tasks requiring nuanced decision-making and adaptability. Traditional reinforcement learning methods were limited in their ability to process high-dimensional sensory inputs, such as the pixels of a video game screen, and to learn effective policies directly from these inputs. The challenge was to create an AI that could not only perceive its environment with human-like fidelity but also make decisions and take actions that lead to optimal outcomes.
 
-### The Solution: Deep Q-Networks (DQNs)
+## The Solution: Deep Q-Networks (DQNs)
 
 David Silver and his team at DeepMind proposed a solution that combined deep learning with reinforcement learning, resulting in the Deep Q-Network (DQN). The DQN architecture utilized a convolutional neural network (CNN) to process raw pixel input from the environment, extracting useful features automatically. This representation was then fed into a Q-learning algorithm, a type of reinforcement learning that aims to learn the value of taking certain actions in specific states to maximize cumulative rewards.
 
-#### Q-Learning and Bellman Equation
+### Q-Learning and Bellman Equation
 
 At the heart of Q-learning is the Q-function, \( Q(s, a) \), which estimates the expected future rewards of taking action \( a \) in state \( s \). The Q-function is updated using the Bellman equation:
 
@@ -25,28 +25,28 @@ where:
 - $( \alpha )$ is the learning rate
 - $( \gamma )$ is the discount factor
 
-#### Deep Learning with CNNs
+### Deep Learning with CNNs
 
 To handle high-dimensional input like images, DQNs use convolutional neural networks (CNNs). The CNN automatically extracts hierarchical features from raw pixel data, allowing the agent to understand the environment at different levels of abstraction. The architecture typically consists of several convolutional layers followed by fully connected layers, ultimately outputting Q-values for each possible action.
 
 ![Logo Jekyll](/assets/cnn.png)
 
-### Techniques for Stable Learning
+## Techniques for Stable Learning
 
-#### Experience Replay
+### Experience Replay
 
 One key innovation in Silver's work was the use of experience replay. Instead of learning from consecutive frames, experiences (state, action, reward, next state) are stored in a replay memory and sampled randomly during training. This breaks the temporal correlations between consecutive samples and improves the stability and efficiency of learning.
 
 
 $$[ D = \{ (s_t, a_t, r_t, s_{t+1}) \} ]$$
 
-#### Target Networks
+### Target Networks
 
 Another crucial technique is the use of a separate target network, \( \hat{Q} \), which is a copy of the Q-network and is updated less frequently. This helps to stabilize learning by providing a consistent target for the Q-value updates.
 
 $$[ \hat{Q}(s, a) = r + \gamma \max_{a'} Q'(s', a') ]$$
 
-### Achieving Human-Level Performance
+## Achieving Human-Level Performance
 
 To demonstrate the effectiveness of their approach, Silver and his team tested the DQN on a suite of Atari 2600 video games. The results were astonishing: the DQN was able to outperform the best existing algorithms and, in many cases, exceed human performance. Games like Breakout, where strategic planning and precise timing are crucial, showcased the DQN's ability to learn complex control policies directly from the raw pixel data.
 
