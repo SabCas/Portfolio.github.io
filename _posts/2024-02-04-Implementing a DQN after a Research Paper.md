@@ -320,6 +320,12 @@ def train(self, num_epochs):
 
 By separating the Q-learning targets from the main network's updates, the target network introduces a delay in the learning updates, smoothing out fluctuations and promoting more consistent and effective learning over time.
 
+### Results
+
+After training for 200 epochs, the model has successfully converged. Here are the TensorBoard images showing the training progress:
+
+![Logo Jekyll](/assets/cnn.png)
+
 
 # Challenges and Solutions
 
