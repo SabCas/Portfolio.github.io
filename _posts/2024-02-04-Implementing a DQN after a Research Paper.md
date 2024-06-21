@@ -324,7 +324,7 @@ By separating the Q-learning targets from the main network's updates, the target
 
 After training for 200 epochs, the model has successfully converged. Here are the TensorBoard images showing the training progress:
 
-![Logo Jekyll](/assets/cnn.png)
+![Logo Jekyll](/assets/tensor.png)
 
 
 # Challenges and Solutions
