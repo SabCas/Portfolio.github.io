@@ -2,6 +2,10 @@
 
 **The paper: [Human-level control through deep reinforcement learning](https://daiwk.github.io/assets/dqn.pdf)**
 
+
+![Logo Jekyll](/assets/cnn.png)
+
+
 Before we implement the DQN Network for the Atari game let's have look at the paper.
 The quest for artificial intelligence (AI) capable of human-level performance has long captivated researchers. One significant milestone in this journey was the groundbreaking paper "Human-level control through deep reinforcement learning" by David Silver and his colleagues, which was published in 2015. This seminal work introduced a novel approach to reinforcement learning (RL) that enabled AI to achieve unprecedented levels of performance in complex environments, particularly in the realm of video games.
 
