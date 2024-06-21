@@ -327,22 +327,9 @@ After training for 200 epochs, the model has successfully converged. Here are th
 ![Logo Jekyll](/assets/tensor.png)
 
 Here is our Pong in action :)
-![Logo Jekyll](/assets/tensor.png)
 
+https://github.com/SabCas/SabCas.github.io/assets/110026351/685e27f8-d6a6-47c0-8851-982a73877fd0
 
-# Challenges and Solutions
-
-## Ensuring Stability and Preventing Divergence
-Using experience replay and a target network are critical to maintaining stability. Experience replay breaks the correlation between samples, and the target network reduces oscillations by providing stable Q-value targets.
-
-## Balancing Exploration and Exploitation
-An epsilon-greedy policy, where $( \epsilon )$ is gradually reduced from 1.0 to 0.1, ensures the agent explores enough before exploiting the best-known actions.
-
-## Handling Diverse Game Scales
-Reward clipping standardizes the scale of rewards across different games, making it feasible to use a consistent learning rate and network architecture for various environments.
-
-## Prioritizing Valuable Experiences
-Prioritized experience replay ensures that transitions with higher learning potential are sampled more frequently, enhancing learning efficiency.
 
 # Conclusion
 Deep Q-Learning with Experience Replay is a powerful approach to mastering complex environments like Atari 2600 games. By incorporating techniques like experience replay, prioritized experience replay, target networks, and reward clipping, this method overcomes many challenges associated with training deep neural networks in reinforcement learning settings.
