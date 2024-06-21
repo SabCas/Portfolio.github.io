@@ -2,6 +2,7 @@
 
 The paper: [Human-level control through deep reinforcement learning](https://daiwk.github.io/assets/dqn.pdf)
 
+Before we implement the DQN Network for the Atari game let's have look at the paper.
 The quest for artificial intelligence (AI) capable of human-level performance has long captivated researchers. One significant milestone in this journey was the groundbreaking paper "Human-level control through deep reinforcement learning" by David Silver and his colleagues, which was published in 2015. This seminal work introduced a novel approach to reinforcement learning (RL) that enabled AI to achieve unprecedented levels of performance in complex environments, particularly in the realm of video games.
 
 ### The Challenge: Bridging the Gap Between AI and Human Performance
@@ -49,7 +50,7 @@ $$[ \hat{Q}(s, a) = r + \gamma \max_{a'} Q'(s', a') ]$$
 
 To demonstrate the effectiveness of their approach, Silver and his team tested the DQN on a suite of Atari 2600 video games. The results were astonishing: the DQN was able to outperform the best existing algorithms and, in many cases, exceed human performance. Games like Breakout, where strategic planning and precise timing are crucial, showcased the DQN's ability to learn complex control policies directly from the raw pixel data.
 
-# Mastering Atari Games with Deep Q-Learning: A Comprehensive Guide
+# Mastering Atari Games with Deep Q-Learning: An Implementation Guide
 
 Deep Q-Learning has become a game-changer in the realm of reinforcement learning, especially for mastering complex environments like Atari 2600 games. This blog post will take you through the detailed journey of Deep Q-Learning with Experience Replay, exploring preprocessing techniques, model architecture, training intricacies, and the innovative tweaks that make this method so powerful.
 
