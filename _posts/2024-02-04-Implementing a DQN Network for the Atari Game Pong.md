@@ -3,7 +3,7 @@
 **The paper: [Human-level control through deep reinforcement learning](https://daiwk.github.io/assets/dqn.pdf)**
 
 
-![Logo Jekyll](/assets/cnn.png)
+![Logo Jekyll](/assets/atari.png)
 
 
 Before we implement the DQN Network for the Atari game let's have look at the paper.
