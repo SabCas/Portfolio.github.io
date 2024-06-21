@@ -261,6 +261,29 @@ def train(self, num_epochs): #number of epochs the target network should be upda
             self.update_target_network()
 ```
 
+In this snippet:
+
+- `self.q_net(states_v)` computes the Q-values for the current states using the main Q-network.
+- `self.target_net(next_states_v)` computes the Q-values for the next states using the target network.
+- `next_state_values` are adjusted to 0 for terminal states (`done_mask`).
+- `expected_state_action_values` are then computed using the Bellman equation, incorporating rewards and discounted future Q-values.
+
+
+### Updating the Target Network
+
+The target network's parameters $( \theta^{-} )$ are updated periodically, typically less frequently than the main network, to provide a stable set of Q-learning targets throughout the training process.
+
+---
+
+```
+def train(self, num_epochs):
+        for epoch in range(num_epochs):
+            episode_return = self.train_epoch(epoch)
+            self.update_target_network()
+```
+
+By separating the Q-learning targets from the main network's updates, the target network introduces a delay in the learning updates, smoothing out fluctuations and promoting more consistent and effective learning over time.
+
 ### Clipping the Error Term
 Large updates can destabilize training. To mitigate this, we clip the error term in the Q-learning update to [-1, 1], which corresponds to using an absolute value loss function for errors outside this interval. This simple tweak significantly improves stability. The loss function $( L_i(\theta_i) )$ is:
 
@@ -298,27 +321,8 @@ End For
 
 ```
 
-In this snippet:
 
-- `self.q_net(states_v)` computes the Q-values for the current states using the main Q-network.
-- `self.target_net(next_states_v)` computes the Q-values for the next states using the target network.
-- `next_state_values` are adjusted to 0 for terminal states (`done_mask`).
-- `expected_state_action_values` are then computed using the Bellman equation, incorporating rewards and discounted future Q-values.
 
-### Updating the Target Network
-
-The target network's parameters $( \theta^{-} )$ are updated periodically, typically less frequently than the main network, to provide a stable set of Q-learning targets throughout the training process.
-
----
-
-```
-def train(self, num_epochs):
-        for epoch in range(num_epochs):
-            episode_return = self.train_epoch(epoch)
-            self.update_target_network()
-```
-
-By separating the Q-learning targets from the main network's updates, the target network introduces a delay in the learning updates, smoothing out fluctuations and promoting more consistent and effective learning over time.
 
 # Results
 
