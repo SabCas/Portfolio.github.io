@@ -351,7 +351,7 @@ In this post, we'll walked through the process of training a Deep Q-Network (DQN
 
 In the standard Deep Q-Network (DQN) approach, we use a neural network to approximate the Q-values for each state-action pair. The goal is to minimize the Temporal Difference (TD) error, defined as the difference between the predicted Q-value and the target Q-value. The target Q-value is computed using the maximum Q-value of the next state from the target network:
 
-$[ y_j = r_j + \gamma \max_a Q'(s_{j+1}, a) ]%
+$[ y_j = r_j + \gamma \max_a Q'(s_{j+1}, a) ]$
 
 where:
 - $( y_j )$ is the target Q-value.
