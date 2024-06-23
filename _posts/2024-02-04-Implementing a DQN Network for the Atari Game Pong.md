@@ -373,7 +373,7 @@ where:
 - $( Q )$ is the current Q-network.
 - $( Q' )$ is the target Q-network.
 
-By using the action selected by the current Q-network ($( \arg\max_a Q(s_{j+1}, a) )$) and evaluating it with the target Q-network (%( Q'(s_{j+1}, \cdot) )$), Double DQN reduces the overestimation bias.
+By using the action selected by the current Q-network ($( \arg\max_a Q(s_{j+1}, a) )$) and evaluating it with the target Q-network ($( Q'(s_{j+1}, \cdot) )$), Double DQN reduces the overestimation bias.
 
 ## Why Use Double DQN?
 
