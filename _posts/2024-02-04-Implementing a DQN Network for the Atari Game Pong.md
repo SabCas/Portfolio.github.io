@@ -180,19 +180,6 @@ def select_action(self, state):
             return int(act_v.item())
 ```
 
-### Efficient Training with Frame-Skipping
-To save on computational resources, the agent selects an action every 4th frame instead of every frame. This not only speeds up training but also lets the agent play more games in the same time.
-
----
-```
-def play_step(self):
-        if self.state is None:
-            self.state, _ = self.reset()
-
-        total_reward = 0.0
-        for _ in range(self.skip):
-            action = self.select_action(self.state)
-```
 
 ## Key Innovations in Deep Q-Learning
 
