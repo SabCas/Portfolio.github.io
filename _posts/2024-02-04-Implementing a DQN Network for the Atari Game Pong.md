@@ -386,6 +386,24 @@ Double DQN is beneficial because:
 
 Now, let's implement Double DQN in your existing agent setup. Here's the updated Agent class with the Double DQN mechanism:
 
+---
+```
+if self.double_dqn:
+            # Double DQN: use online network to select actions and target network to evaluate Q-values
+            q_vals_next = self.q_net(next_states_v)
+            _, act_next = torch.max(q_vals_next, dim=1)
+            act_next = act_next.unsqueeze(-1)
+            q_vals_target = self.target_net(next_states_v)
+            next_state_values = q_vals_target.gather(1, act_next).squeeze(-1)
+        else:
+            # Regular DQN: use target network for both action selection and Q-value evaluation
+            q_vals_target = self.target_net(next_states_v)
+            next_state_values = q_vals_target.max(1)[0]
+
+        next_state_values[done_mask] = 0.0
+        next_state_values = next_state_values.detach()
+        expected_state_action_values = next_state_values * GAMMA + rewards_v
+```
 
 
 # Conclusion
