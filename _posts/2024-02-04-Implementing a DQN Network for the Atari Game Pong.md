@@ -8,7 +8,7 @@
 ![Logo Jekyll](/assets/atari.png)
 
 
-Before we implement the DQN Network for the Atari game let's have look at the paper.
+Before we implement the DQN Network for the Atari game let's have look at the first DQN paper.
 The quest for artificial intelligence (AI) capable of human-level performance has long captivated researchers. One significant milestone in this journey was the groundbreaking paper "Human-level control through deep reinforcement learning" by David Silver and his colleagues, which was published in 2015. This seminal work introduced a novel approach to reinforcement learning (RL) that enabled AI to achieve unprecedented levels of performance in complex environments, particularly in the realm of video games.
 
 ## The Challenge: Bridging the Gap Between AI and Human Performance
@@ -331,7 +331,7 @@ End For
 
 
 
-# Results
+## Results
 
 After training for 200 epochs, the model has successfully converged. Here are the TensorBoard images showing the training progress:
 
@@ -340,6 +340,52 @@ After training for 200 epochs, the model has successfully converged. Here are th
 Here is our Pong in action :)
 
 https://github.com/SabCas/SabCas.github.io/assets/110026351/685e27f8-d6a6-47c0-8851-982a73877fd0
+
+# Improving DQN with Double Q-learning
+
+In this post, we'll walked through the process of training a Deep Q-Network (DQN) agent to play Atari Pong using PyTorch. Additionally, we can explore the scond paper on Double DQN, as proposed in the paper ["Deep Reinforcement Learning with Double Q-learning" by Hado van Hasselt, Arthur Guez, and David Silver](https://arxiv.org/abs/1509.06461) ,  can help stabilize training by addressing the overestimation bias present in standard DQN.
+
+
+
+## Standard DQN
+
+In the standard Deep Q-Network (DQN) approach, we use a neural network to approximate the Q-values for each state-action pair. The goal is to minimize the Temporal Difference (TD) error, defined as the difference between the predicted Q-value and the target Q-value. The target Q-value is computed using the maximum Q-value of the next state from the target network:
+
+$[ y_j = r_j + \gamma \max_a Q'(s_{j+1}, a) ]%
+
+where:
+- $( y_j )$ is the target Q-value.
+- $( r_j )$ is the reward.
+- $( \gamma )$ is the discount factor.
+- $( Q' )$ is the target Q-network.
+
+## The Problem with Standard DQN
+
+One of the main issues with the standard DQN approach is the overestimation bias. Because the maximum Q-value is used for the target, it can lead to overly optimistic estimates of the action values, resulting in suboptimal policies.
+
+## Double DQN
+
+Double DQN addresses the overestimation bias by decoupling the action selection from the action evaluation. Instead of using the maximum Q-value from the target network to compute the target, Double DQN uses the current Q-network to select the action and the target Q-network to evaluate it:
+
+$[ y_j = r_j + \gamma Q'(s_{j+1}, \arg\max_a Q(s_{j+1}, a)) ]$
+
+where:
+- $( Q )$ is the current Q-network.
+- $( Q' )$ is the target Q-network.
+
+By using the action selected by the current Q-network ($( \arg\max_a Q(s_{j+1}, a) )$) and evaluating it with the target Q-network (%( Q'(s_{j+1}, \cdot) )$), Double DQN reduces the overestimation bias.
+
+## Why Use Double DQN?
+
+Double DQN is beneficial because:
+- It reduces the overestimation bias present in standard DQN.
+- This leads to more stable training and better policies.
+- The decoupling of action selection and action evaluation provides a more accurate estimate of the action values.
+
+## Implementing Double DQN in Your Agent
+
+Now, let's implement Double DQN in your existing agent setup. Here's the updated Agent class with the Double DQN mechanism:
+
 
 
 # Conclusion
