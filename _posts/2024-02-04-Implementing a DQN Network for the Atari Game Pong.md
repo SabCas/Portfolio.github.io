@@ -405,6 +405,12 @@ if self.double_dqn:
         expected_state_action_values = next_state_values * GAMMA + rewards_v
 ```
 
+## Results from the Paper
+
+Figure 4 from van Hasselt et al. (2016) illustrates the normalized scores across 57 Atari games, comparing the performance of standard DQN and Double DQN. The results highlight significant improvements in games where Double DQN outperformed standard DQN, marked by stars and bold font in the figure. These improvements underscore the efficacy of Double DQN in achieving superior performance by mitigating the overestimation bias.
+
+In conclusion, Double DQN represents a crucial advancement in reinforcement learning algorithms, particularly in complex environments like Atari games. By addressing the inherent bias of standard DQN, Double DQN not only enhances learning efficiency but also enables the discovery of more optimal policies.
+
 
 # Conclusion
 Deep Q-Learning with Experience Replay is a powerful approach to mastering complex environments like Atari 2600 games. By incorporating techniques like experience replay, prioritized experience replay, target networks, and reward clipping, this method overcomes many challenges associated with training deep neural networks in reinforcement learning settings.
