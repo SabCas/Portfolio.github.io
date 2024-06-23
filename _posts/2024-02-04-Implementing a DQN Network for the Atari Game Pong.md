@@ -394,7 +394,8 @@ if self.double_dqn:
 
 ## Results from the Paper
 
-![Logo Jekyll](/assets/.png)
+![Logo Jekyll](/assets/resultspaper.png)
+
 
 Figure 4 from van Hasselt et al. (2016) illustrates the normalized scores across 57 Atari games, comparing the performance of standard DQN and Double DQN. The results highlight significant improvements in games where Double DQN outperformed standard DQN, marked by stars and bold font in the figure. These improvements underscore the efficacy of Double DQN in achieving superior performance by mitigating the overestimation bias.
 
