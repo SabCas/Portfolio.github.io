@@ -38,7 +38,8 @@ where $( d^\pi(s) )$ is the stationary distribution of states under policy $( \p
 
 Next, we differentiate $( J(\theta) )$ with respect to $( \theta )$:
 
-$$\nabla_\theta J(\theta) = \nabla_\theta \sum_s d^\pi(s) \sum_a \pi_\theta(a|s) Q^\pi(s, a)$$
+$$\nabla_\theta J(\theta) \approx \mathbb{E}_{\pi} [ \nabla_\theta \log \pi_\theta(a|s) G_t ]$$
+
 
 Using the linearity of the gradient operator:
 
@@ -50,7 +51,7 @@ We apply the log-derivative trick $( \nabla_\theta \pi_\theta(a|s) = \pi_\theta(
 
 $$\nabla_\theta J(\theta) = \sum_s d^\pi(s) \sum_a \pi_\theta(a|s) \nabla_\theta \log \pi_\theta(a|s) Q^\pi(s, a)$$
 
-Since \( \sum_a \pi_\theta(a|s) \nabla_\theta \log \pi_\theta(a|s) Q^\pi(s, a) \) is an expectation over actions, we can rewrite it as:
+Since $( \sum_a \pi_\theta(a|s) \nabla_\theta \log \pi_\theta(a|s) Q^\pi(s, a) )$ is an expectation over actions, we can rewrite it as:
 
 $$\nabla_\theta J(\theta) = \mathbb{E}_{s \sim d^\pi, a \sim \pi_\theta} [ \nabla_\theta \log \pi_\theta(a|s) Q^\pi(s, a) ]$$
 
@@ -64,7 +65,7 @@ This is the policy gradient theorem, which forms the basis for the REINFORCE alg
 
 ### REINFORCE Update Rule
 
-Using Monte Carlo methods, we can estimate the gradient using sampled trajectories. The update rule for the policy parameters \( \theta \) is:
+Using Monte Carlo methods, we can estimate the gradient using sampled trajectories. The update rule for the policy parameters %( \theta )% is:
 
 $$\theta \leftarrow \theta + \alpha \nabla_\theta J(\theta)$$
 
